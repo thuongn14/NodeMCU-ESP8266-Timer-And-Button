@@ -15,3 +15,7 @@ In this lab, we have to write a program that
 - Decreases the counter value automatically in every 0.1 second, if the second button is pressed in more than 3 seconds.
 - The above values such as 10 ms, 0.5 s, 0.1s, 1 s and 3 s are fixed values as an example. Your program, however, needs to provide an easy way to change those values. For example, you should use DEFINE to define those values.
 - If both buttons are pressed, the first button has a higher priority than the second one.
+
+## State Machine
+![State Machine]
+(https://github.com/thuongn14/NodeMCU-ESP8266-Timer-And-Button/issues/1#issue-499604226)
