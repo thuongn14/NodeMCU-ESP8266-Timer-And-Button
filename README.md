@@ -1,9 +1,9 @@
 # NodeMCU ESP8266 Timer And Button
-Objectives:
+## Objectives
 - Learn how to use a timer in NodeMCU
 - Learn how to read digital inputs and display values via UART/LED using a timer
 
-Problem:
+## Problem
 In this lab, we have to write a program that
 - Has a timer which has an interrupt in every 10 milliseconds.  
 - Reads values of two buttons every 10 milliseconds. The read button function should be called inside the timer interrupt service routine.
