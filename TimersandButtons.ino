@@ -48,18 +48,18 @@ void loop() {
       break;
 
     case INCREASE_EVERY_500MS:
-      if (countA3s == 50) {
+      if (countToValueA == 50) {
         value++;
-        countA3s = 0;
+        countToValueA = 0;
       }
       if (!pressA) currentState = WAIT;
       if (pressA3s) currentState = INCREASE_EVERY_100MS;
       break;
       
     case INCREASE_EVERY_100MS:
-      if (countA3s == 10) {
+      if (countToValueA == 10) {
         value++;
-        countA3s = 0;
+        countToValueA = 0;
       }
       if (!pressA) currentState = WAIT;
       break;
@@ -77,9 +77,9 @@ void loop() {
     case DECREASE_EVERY_500MS:
       if (pressA) currentState = WAIT;
       else {
-        if (countB3s == 50) {
+        if (countToValueB == 50) {
           value--;
-          countB3s = 0;
+          countToValueB = 0;
         }
         
       if (!pressB) currentState = WAIT;
@@ -89,9 +89,9 @@ void loop() {
       
     case DECREASE_EVERY_100MS:
       if (pressA == true) currentState = WAIT;
-      if (countB3s == 10) {
+      if (countToValueB == 10) {
         value--;
-        countB3s = 0;
+        countToValueB = 0;
       }
       if (pressB == 0) currentState = WAIT;
       break;
