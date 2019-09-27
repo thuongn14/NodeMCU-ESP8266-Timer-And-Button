@@ -11,7 +11,7 @@
 #define ButtonB 9
 
 extern bool pressA, pressA1s, pressA3s, pressB, pressB1s, pressB3s;
-extern int value, prevValue, countA1s, countA3s, countB1s, countB3s;
+extern int value, prevValue, countToStatusA, countToValueA, countToStatusB, countToValueB;
 
 void displayToLed(int value);
 
