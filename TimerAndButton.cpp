@@ -2,11 +2,11 @@
 
 int prevValue = 0;
 int value = 0;
-int countA1s = 0;
-int countA3s = 0;
+int countToStatusA = 0;
+int countToValueA = 0;
 
-int countB1s = 0;
-int countB3s = 0;
+int countToStatusB = 0;
+int countToValueB = 0;
 
 bool firstReadA = 0;
 bool secondReadA = 0;
@@ -40,15 +40,15 @@ void readButtonA() {
   if (secondReadA == firstReadA) {
     if (firstReadA) {
       pressA = 1;
-      countA1s++;
-      if (countA1s >= 100) {
-        if (countA1s >= 300) {
+      countToStatusA++;
+      if (countToStatusA >= 100) {
+        if (countToStatusA >= 300) {
           pressA3s = 1;
-          countA3s++;
+          countToValueA++;
           }
         else {
         pressA1s = 1;
-        countA3s++;
+        countToValueA++;
         }
       }
     } else {
@@ -56,8 +56,8 @@ void readButtonA() {
       pressA = 0;
       pressA1s = 0;
       pressA3s = 0;
-      countA1s = 0;
-      countA3s = 0;
+      countToStatusA = 0;
+      countToValueA = 0;
     }
   }
 }
@@ -69,15 +69,15 @@ void readButtonB() {
   if (secondReadB == firstReadB) {
     if (firstReadB) {
       pressB = 1;
-      countB1s++;
-      if (countB1s >= 100) {
-        if (countB1s >= 300) {
+      countToStatusB++;
+      if (countToStatusB >= 100) {
+        if (countToStatusB >= 300) {
           pressB3s = 1;
-          countB3s++;
+          countToValueB++;
           }
         else {
         pressB1s = 1;
-        countB3s++;
+        countToValueB++;
         }
       }
     } else {
@@ -85,8 +85,8 @@ void readButtonB() {
       pressB = 0;
       pressB1s = 0;
       pressB3s = 0;
-      countB1s = 0;
-      countB3s = 0;
+      countToStatusB = 0;
+      countToValueB = 0;
     }
   }
 }
