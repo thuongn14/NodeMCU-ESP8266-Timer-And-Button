@@ -18,4 +18,4 @@ In this lab, we have to write a program that
 
 ## State Machine
 ![State Machine]
-(https://github.com/thuongn14/NodeMCU-ESP8266-Timer-And-Button/issues/1#issue-499604226)
+(https://user-images.githubusercontent.com/38918466/65795613-de26b980-e194-11e9-8acc-8589d81f0376.jpeg)
